@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Calculations</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="work.html">Work</a>
+        <a href="form.html">Form</a>
+        <a href="math.html">Math</a>
+        <a href="api.html">API</a>
+    </nav>
+    
+    <main>
+        <section class="calculator-container">
+            <h1>Algebraic Calculations</h1>
+            <form id="algebra-form">
+                <label for="number1">Number 1:</label>
+                <input type="number" id="number1" required>
+
+                <label for="number2">Number 2:</label>
+                <input type="number" id="number2" required>
+
+                <div class="operations">
+                    <button id="add" type="button">Add</button>
+                    <button id="subtract" type="button">Subtract</button>
+                    <button id="multiply" type="button">Multiply</button>
+                    <button id="divide" type="button">Divide</button>
+                </div>
+                
+                <p>Result: <span id="result"></span></p>
+            </form>
+        </section>
+
+        <section class="calculator-container">
+            <h2>Trigonometric Calculations</h2>
+            <form id="trigonometry-form">
+                <label for="angle">Angle (degrees):</label>
+                <input type="number" id="angle" required>
+
+                <div class="operations">
+                    <button id="sin" type="button">Sin</button>
+                    <button id="cos" type="button">Cos</button>
+                    <button id="tan" type="button">Tan</button>
+                    <button id="cot" type="button">Cot</button>
+                </div>
+                
+                <p>Result: <span id="trig-result"></span></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="src/script.js"></script>
+</body>
+</html>
+
