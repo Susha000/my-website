@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>My Website with Lottie Animation</title>
     <link rel="stylesheet" href="src/style.css">
+    <script src="https://lottie.host/embed/1084124e-cc9d-4811-8aad-1941cd1976a9/bk5aNmB3HK.json"></iframe>"></script>
 </head>
 <body>
     <nav class="navbar">
-        <img src="src/public/logo.jpg" width="60" height="60" alt="logo"> 
+        <div class="logo">
+            <img src="src/public/logo.jpg" alt="Site logo"> 
+        </div>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="video.html">Videos</a></li>
@@ -23,23 +26,26 @@
                 </ul>
             </li>
         </ul>
-        <div><a href="https://ku.edu.kz">Entry</a></div>
-        <div class="burger" id="burger2">
+        <div><a href="https://ku.edu.kz" target="_blank" rel="noopener noreferrer">Entry</a></div>
+        
+        <div class="burger" id="burger2" aria-label="Toggle navigation">
             <span></span>
             <span></span>
             <span></span>
         </div>
     </nav>
-    
+
     <main>
+        <section id="lottie-container" class="animation-container"></section>
+
         <section class="form">
             <form>
                 <fieldset>
                     <legend>Personal Information</legend>
                     <label for="name">Name: </label>
-                    <input id="name" name="new_name" placeholder="Name" type="text" required/>
+                    <input id="name" name="new_name" placeholder="Enter your name" type="text" required/>
                     <label for="surname">Surname: </label>
-                    <input id="surname" name="new_surname" placeholder="Surname" type="text" required/>
+                    <input id="surname" name="new_surname" placeholder="Enter your surname" type="text" required/>
                     <label for="age">Age: </label>
                     <input id="age" name="new_age" placeholder="18" type="number" required/>
                 </fieldset>
@@ -48,7 +54,7 @@
         </section>
 
         <section class="person">
-            <img src="src/public/WhatsApp Image 2024-09-11 at 14.35.24.jpeg" alt="A photo of me">
+            <img src="src/public/WhatsApp Image 2024-09-11 at 14.35.24.jpeg" alt="Photo of Ksenia Gorban">
             <p>Ksenia Gorban</p>
         </section>
 
@@ -70,6 +76,7 @@
                 <li>Data Analysis</li>
             </ul>
         </section>
+        <iframe src="https://lottie.host/embed/08997118-0fd3-49bf-8ea4-de9d4cfd2109/vmKarxXHy4.json"></iframe>
 
         <section class="essay">
             <h2>About Me</h2>
@@ -77,21 +84,39 @@
                 My name is Ksenia Gorban, I am 19 years old and a student at Kozybayev University. I played basketball in high school and graduated from music school, where I developed my singing skills. I read a lot, averaging 15-20 books a month. You can recognize me by my eyebrow piercing and the burn on my right arm.
             </p>
         </section>
+
+       
     </main>
+    <iframe src="https://lottie.host/embed/1084124e-cc9d-4811-8aad-1941cd1976a9/bk5aNmB3HK.json"></iframe>
+    <iframe src="https://lottie.host/embed/63abb75c-c5dd-4d34-9027-fc7b87facc80/dThbVMgnnc.json"></iframe>
+    
 
     <footer>
-        <a href="https://www.instagram.com/ks.renraw?igsh=MzVsamk1bW5jcHRq" target="_blank">
+        <a href="https://www.instagram.com/ks.renraw?igsh=MzVsamk1bW5jcHRq" target="_blank" rel="noopener noreferrer">
             <img src="src/public/inst.jpg" alt="Instagram">
         </a>
-        <a href="https://facebook.com" target="_blank">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
             <img src="src/public/face.jpg" alt="Facebook">
         </a>
-        <a href="https://youtube.com" target="_blank">
+        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
             <img src="src/public/yt.jpg" alt="YouTube">
         </a>
-        <a href="https://ku.edu.kz" target="_blank">Kozybayev University</a>
+        <a href="https://ku.edu.kz" target="_blank" rel="noopener noreferrer">Kozybayev University</a>
     </footer>
 
+    
     <script src="js/script.js"></script>
+
+    <!-- Lottie Animation Script -->
+    <script>
+        // Loading and playing the Lottie animation
+        lottie.loadAnimation({
+            container: document.getElementById('lottie-container'), 
+            renderer: 'svg', 
+            loop: true, 
+            autoplay: true, 
+            path: 'src/animatiosrc/Animation/flover.json' 
+        });
+    </script>
 </body>
 </html>

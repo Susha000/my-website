@@ -1,4 +1,3 @@
-
 body, h1, h2, p, ul, li, img, a {
     margin: 0;
     padding: 0;
@@ -13,12 +12,24 @@ body {
     padding: 20px;
 }
 
-
 .navbar {
     background-color: #e9eef0;
     color: #c23d3d;
     padding: 10px 20px;
     position: relative;
+    display: flex;
+    align-items: center; 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px; 
+    height: auto; 
+    margin-right: 15px; 
 }
 
 .navbar ul {
@@ -40,11 +51,9 @@ body {
     border-radius: 4px;
 }
 
-
 main {
     margin-top: 20px;
 }
-
 
 .person {
     display: flex;
@@ -62,7 +71,6 @@ main {
 .person p {
     font-size: 1.2rem;
 }
-
 
 .info, .skills {
     margin-bottom: 20px;
@@ -86,7 +94,6 @@ main {
     margin-bottom: 5px;
 }
 
-
 .essay {
     background-color: #fff;
     padding: 15px;
@@ -98,7 +105,6 @@ main {
     margin-bottom: 10px;
     font-size: 1.5rem;
 }
-
 
 footer {
     margin-top: 20px;
@@ -144,7 +150,6 @@ footer img {
         margin-left: 0;
     }
 }
-
 
 .burger {
     display: none;
@@ -206,7 +211,6 @@ footer img {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
-
 .navbar ul .work {
     position: relative;
     display: flex;
@@ -251,7 +255,6 @@ footer img {
     }
 }
 
-
 .form {
     display: flex;
     flex-direction: column;
@@ -278,7 +281,6 @@ footer img {
 .form form button:hover {
     background-color: #91130c;
 }
-
 
 .calculator-container {
     background-color: #fff;
@@ -360,5 +362,29 @@ p {
 
     p {
         font-size: 1.2rem;
+    }
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+img {
+    width: 100%;
+    max-width: 400px;
+}
+
+@media (max-width: 1200px) {
+    img {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 700px) {
+    img {
+        max-width: 200px;
     }
 }
